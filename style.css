@@ -1,0 +1,176 @@
+html,
+body {
+  height: 100%; /* Make sure the body takes the full height of the viewport */
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  background: linear-gradient(
+    to right,
+    #f0e6dc 50%,
+    #ffffff 50%
+  ); /* Split background */
+}
+
+.main-header {
+  background-color: white;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.header-nav ul {
+  list-style: none;
+  margin: 0;
+  padding-right: 50px;
+  display: flex;
+}
+
+.header-nav ul li {
+  margin-left: 25px;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  flex: 1; /* Take up the remaining space */
+  max-width: 1200px;
+  margin: 80px auto; /* Added margin-top to give space for the fixed header */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+  background-color: #f0e6dc; /* Left-side color */
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.profile h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.profile p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.profile .social-icons {
+  margin-top: 20px;
+}
+
+.profile .social-icons a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.content {
+  padding: 40px;
+  flex: 2;
+  background-color: #ffffff; /* Right-side color */
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.content p {
+  margin: 20px 0;
+  color: #555;
+}
+
+.content .buttons {
+  margin-top: 20px;
+}
+
+.content .buttons a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.content .buttons a.projects {
+  background-color: #6c757d;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.footer p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.footer .contact-info {
+  margin-top: 10px;
+  display: flex; /* Use Flexbox to align items */
+  justify-content: center; /* Center align the items */
+}
+
+.footer .contact-info span {
+  margin: 0 10px; /* Space between items */
+}
+
+.footer .contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer .social-container {
+  display: flex; /* Use Flexbox for the social section */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: center; /* Center align the items */
+  margin-top: 0px; /* Space above social section */
+}
+
+.footer .social-container p {
+  margin: 0 10px; /* Space between the text and icons */
+}
+
+.footer .social-icons {
+  display: flex; /* Align icons in a row */
+}
+
+.footer .social-icons a {
+  margin: 0 10px; /* Space between icons */
+  color: #007bff;
+}
